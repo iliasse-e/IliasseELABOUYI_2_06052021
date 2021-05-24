@@ -1,1 +1,145 @@
-<h1> bonjour </h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="reservia.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="https://kit.fontawesome.com/1d4b85ca7e.js" crossorigin="anonymous"></script>
+        
+        <link rel="icon" type="image/png" href="images/logo/Reservia.svg">
+        <title>Reservia</title>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header>
+            <div id="header-first-line">
+                <img id="header-logo" src="images/logo/Reservia.svg" alt="logo">
+                <a href="#">S'inscrire</a>
+            </div>
+            <nav>
+                <ul>
+                    <a>Hébergement</a>
+                    <a>Activités</a>
+                </ul>
+            </nav>
+            
+            <div id="header-search">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+                <div id="header-search-input">
+                    <span class="fas fa-map-marker-alt"></span>
+                    <input type="text" id="accomodations-search-input-content" name="name" required
+                    minlength="4" maxlength="8" size="10" value="Marseille, France">
+                    <button id="accomodations-search-input-button">Rechercher</button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <div id="result-information">
+
+                
+                <p><span><i class="fas fa-info"></i></span>   Plus de 5000 logements sont disponibles dans cette ville</p>
+
+            </div>
+            
+            <div id="filters">
+                <h3>Filtres</h3>
+                
+                <div class="filter-container">                    
+                    <div class="filter-content">
+                        <span><i class="fas fa-money-bill-wave-alt"></i></span><p>Economique</p>
+                    </div>
+                </div>
+
+                <div class="filter-container">                    
+                    <div class="filter-content">
+                        <span><i class="fas fa-child"></i></span><p>Economique</p>
+                    </div>
+                </div>
+
+                <div class="filter-container">                    
+                    <div class="filter-content">
+                        <span><i class="fas fa-heart"></i></span><p>Economique</p>
+                    </div>
+                </div>
+
+                <div class="filter-container">                    
+                    <div class="filter-content">
+                        <span><i class="fas fa-dog"></i></span><p>Animaux autorisés</p>
+                    </div>
+                </div>
+                
+            </div>
+            <section id="accomodations">
+                <section id="accomodations-container">
+                    <h1>Hébergements à Marseille</h1>
+                    <div id="accomodations-content">
+                        <!-- Carte d'hébergement -->
+                        <article class="accomodation-card">
+                            <a href="#">
+                                <img class="accomodation-card-image" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo chambre auberge">
+                                <h3>Auberge la Cannebière</h3>
+                                <p>Nuit à partir de <strong>25€</strong></p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </a>
+                        </article>
+                    </div>
+                    <h2>Afficher plus</h2>
+                </section>
+                <aside id="accomodations-popular">
+                    <div id="accomodations-popular-title">
+                        <h1>Les plus populaires</h1>
+                    </div>
+                    <div id="accomodations-popular-content"></div>
+                </aside>
+            </section>
+            
+            <section id="activities">
+                <h1>Activités à Marseille</h1>
+                <div id="activities-content">
+                    <article id="activities-content-article">
+                        <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo vieux port">
+                        <h3>Vieux Port</h3>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <section id="about">
+                <h2>A props</h2>
+                <ul>
+                    <li>Fonctionnement du site</li>
+                    <li>Conditions générales de vente</li>
+                    <li>Données et confidentialité</li>
+                </ul>
+            </section>
+            <section id="our-accomodations">
+                <h2>Nos Hébergements</h2>
+                <ul>
+                    <li>Charte qualité</li>
+                    <li>Soumettre votre hôtel</li>
+                </ul>
+            </section>
+            <section id="help">
+                <h2>Assistance</h2>
+                <ul>
+                    <li>Centre d'aide</li>
+                    <li>Nous contacter</li>
+                </ul>
+            </section>
+        </footer>
+
+    </body>
+</html>

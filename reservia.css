@@ -1,3 +1,133 @@
-#h1 {
-    background: white;
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    padding: 1em;
+    margin: 56px;
+    width: 1440px;
+    height: 1884px;
 }
+
+/*-- Header --*/
+
+#header-first-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul :nth-child(1)  {
+    color: #0a5ff4;
+}
+
+button {
+    background-color: #0a5ff4 ;
+}
+
+/*-- Main --*/
+
+#result-information {
+    display: flex;
+}
+
+#result-information i {
+    color:#0a5ff4;
+    width: 1.5em;
+    height: 1.5em;
+    border: 0.08em #757575 solid;
+    border-radius: 2.4em;
+}
+
+/*-- Filters --*/
+
+#filters {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+    padding: 0.5em;
+}
+
+#filters i {
+    color:#0a5ff4;
+    background-color: #ddeafd;
+    width: 2.2em;
+    height: 2.2em;
+    border-radius: 1.7em;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 1.5em;
+}
+
+.filter-container {
+    vertical-align: middle;
+    padding-top: 0.5em;
+}
+
+.filter-content {
+    font-weight:bold;
+    font-size: 0.7em;
+    display: flex;
+    border: 0.18em #d8d8d8 solid;
+    border-radius: 2.4em;
+    align-items: center;
+    
+}
+
+p {
+    margin-left: 1.1em;
+    margin-right: 1.1em;
+    font-weight: 900;
+}
+
+/*-- Accomodation --*/
+
+#accomodations {
+    display: flex;
+    justify-content: space-between;
+}
+
+#accomodations:nth-child(1) {
+    flex: 2;
+}
+#accomodations:nth-child(2) {
+    flex: 1;
+}
+#accomodations-content {
+    background-color: #f2f2f2;
+}
+
+.accomodation-card {
+    size: 10%;
+    background-color: white;
+    width: 250px;
+    height: 200px;
+    border-radius: 1.8em;
+    font-size: 0.5em;
+    text-decoration: none;
+    box-shadow: 6px 6px 0px gray;
+}
+
+.accomodation-card img {
+    width: 240px;
+    height: 120px;
+}
+
+.checked {
+    color: blue;
+}
+
+/*-- Activities --*/
+
+/*-- Footer --*/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    
+}
+
