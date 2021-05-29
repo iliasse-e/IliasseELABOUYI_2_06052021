@@ -20,7 +20,12 @@ a {
     justify-content: space-between;
     color: #0065FC;
     align-items: center;
+
+}
+
+#header-first-line a {
     font-weight: 700;
+    margin: 0 4% 0 4%;
 }
 
 header nav {
@@ -48,6 +53,17 @@ header nav a:active {
     padding-block-start: 14%;
 }
 
+header h1 {
+    font-size: 1.5em;
+    margin-top: 3%;
+}
+
+header p {
+    margin-top: -0.5%;
+    font-size: 0.9em;
+}
+
+/* Search input */
 
 #header-search p {
     font-weight: 500;
@@ -55,38 +71,33 @@ header nav a:active {
 }
 
 #header-search-input {
-    height: 50px;
+    height: 40px;
 }
 
 #header-search input {
+    width: 12%;
     font-weight: 700;
-    margin-right: -10px;
+    margin-right: -5px;
+    margin-left: 10px;
     height: 100%;
-}
-
-#header-search span {
-    display: inline-block;
-    width: 30px;
-    height: 100%;
-    text-align:justify;
-    background-color: #757575;
-    border-bottom-left-radius: 1em;
-    border-top-left-radius: 1em;
+    border-width:0;
 }
 
 #header-search span i {
-    vertical-align:bottom;
-    
+    background: #f2f2f2;
+    padding:1.3%;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
 }
 
 header button {
     background-color: #0a5ff4 ;
     border: none;
-    height: 100%;
+    height: 105%;
     width: 8%;
-    border-top-right-radius: 1em;
-    border-bottom-right-radius: 1em;
-    padding: 0.2em;
+    border-top-right-radius: 0.7em;
+    border-bottom-right-radius: 0.7em;
+    padding: 0%;
     color: white;
     font-weight: 500;
     font-size: 1em;
@@ -98,30 +109,20 @@ main {
     height: 1300px;
 }
 
-#result-information p {
-    font-weight: 500;
-}
-
-#result-information span {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    border: 0.08em #757575 solid;
-    border-radius: 2.4em;
-    text-align: center;
-}
-
-#result-information span i {
-    color:#0a5ff4;
-}
 
 /*-- Filters --*/
 
 #filters {
+    margin: 2% 0 2% 0;
     display: flex;
     justify-content: space-between;
-    width: 990px;
+    width: 65%;
     padding: 0.5em;
+}
+
+.filter-content:hover {
+    transform: scale(1.2);
+    transition: transform .9s ease;
 }
 
 #filters i {
@@ -156,11 +157,34 @@ main {
     font-weight: 800;
 }
 
+#result-information p {
+    font-weight: 500;
+}
+
+#result-information span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 0.08em #d8d8d8 solid;
+    border-radius: 2.4em;
+    text-align: center;
+    margin-right: 0.5%;
+    position:relative;
+    top: -05px;
+}
+
+#result-information span i {
+    font-size: 0.8em;
+    color:#0a5ff4;
+}
+
+
 /*-- Accomodation --*/
 
 #accomodations {
     display: flex;
     justify-content: space-between;
+    margin: 3% 0 3% 0;
 }
 
 #accomodations section {
