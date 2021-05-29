@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="reservia.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="https://kit.fontawesome.com/1d4b85ca7e.js" crossorigin="anonymous"></script>
@@ -22,8 +22,8 @@
             </div>
             <nav>
                 <ul>
-                    <a>Hébergement</a>
-                    <a>Activités</a>
+                    <a href="#accomodations">Hébergements</a>
+                    <a href="#activities">Activités</a>
                 </ul>
             </nav>
             
@@ -31,7 +31,7 @@
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
                 <div id="header-search-input">
-                    <span class="fas fa-map-marker-alt"></span>
+                    <span id="location-button"> <i class="fas fa-map-marker-alt"></i></span>
                     <input type="text" id="accomodations-search-input-content" name="name" required
                     minlength="4" maxlength="8" size="10" value="Marseille, France">
                     <button id="accomodations-search-input-button">Rechercher</button>
@@ -42,10 +42,7 @@
         <main>
 
             <div id="result-information">
-
-                
                 <p><span><i class="fas fa-info"></i></span>   Plus de 5000 logements sont disponibles dans cette ville</p>
-
             </div>
             
             <div id="filters">
@@ -59,13 +56,13 @@
 
                 <div class="filter-container">                    
                     <div class="filter-content">
-                        <span><i class="fas fa-child"></i></span><p>Economique</p>
+                        <span><i class="fas fa-child"></i></span><p>Familial</p>
                     </div>
                 </div>
 
                 <div class="filter-container">                    
                     <div class="filter-content">
-                        <span><i class="fas fa-heart"></i></span><p>Economique</p>
+                        <span><i class="fas fa-heart"></i></span><p>Romantique</p>
                     </div>
                 </div>
 
@@ -93,12 +90,27 @@
                                 <span class="fa fa-star"></span>
                             </a>
                         </article>
+
+                        <article class="accomodation-card">
+                            <a href="#">
+                                <img class="accomodation-card-image" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="photo chambre auberge">
+                                <h3>Hôtel du port</h3>
+                                <p>Nuit à partir de <strong>25€</strong></p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </a>
+                        </article>
+
                     </div>
                     <h2>Afficher plus</h2>
                 </section>
                 <aside id="accomodations-popular">
                     <div id="accomodations-popular-title">
                         <h1>Les plus populaires</h1>
+                        <i class="fas fa-chart-line"></i>
                     </div>
                     <div id="accomodations-popular-content"></div>
                 </aside>
@@ -108,8 +120,10 @@
                 <h1>Activités à Marseille</h1>
                 <div id="activities-content">
                     <article id="activities-content-article">
-                        <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo vieux port">
-                        <h3>Vieux Port</h3>
+                        <a href="#">
+                            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo vieux port">
+                            <h3>Vieux Port</h3>
+                        </a>
                     </article>
                 </div>
             </section>
@@ -118,7 +132,7 @@
         <!-- Footer -->
         <footer>
             <section id="about">
-                <h2>A props</h2>
+                <h2>A propos</h2>
                 <ul>
                     <li>Fonctionnement du site</li>
                     <li>Conditions générales de vente</li>
