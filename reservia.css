@@ -158,7 +158,8 @@ main {
 }
 
 #result-information p {
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 0.9em;
 }
 
 #result-information span {
@@ -203,8 +204,12 @@ main {
 
 #accomodations-content {
     display: flex;
-  
-    
+    flex-wrap: wrap;   
+}
+
+.accomodation-card:hover {
+    transform: scale(1.02);
+    transition: transform .4s ease;
 }
 
 .accomodation-card {
@@ -212,25 +217,44 @@ main {
     background-color: white;
     width: 250px;
     height: 200px;
-    border-radius: 1.8em;
+    border-radius: 1em;
     font-size: 0.8em;
     text-decoration: none;
-    box-shadow: 6px 6px 0px #9999;
-    margin-right: 3em;
+    box-shadow: 1px 1px 6px #9999;
+    margin:0 3em 3em 0;
+    text-align: center;
+}
+
+.accomodation-card h3, .accomodation-card p, .accomodation-card img {
+    margin: 0% 0% 2.5% 0%;
+}
+
+.accomodation-card-information {
+    padding-left: 4%;
+    text-align: left;
 }
 
 .accomodation-card img {
+    object-fit: cover;
+    margin-top: 2%;
     width: 240px;
     height: 120px;
-    object-fit: cover;
-}
-
-.checked {
-    color: blue;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
 }
 
 #accomodations-popular-title {
     display: flex;
+}
+
+/* rating stars color */
+
+.checked {
+    color:#0065FC;
+}
+
+.unchecked {
+    color: #cecece;
 }
 
 /*-- Activities --*/
