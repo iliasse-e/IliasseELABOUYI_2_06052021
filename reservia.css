@@ -239,12 +239,53 @@ main {
     margin-top: 2%;
     width: 240px;
     height: 120px;
-    border-top-right-radius: 1em;
-    border-top-left-radius: 1em;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
 }
+
+#accomodations h2 {
+    font-size: 1em;
+}
+
+/* Popular - Aside */
 
 #accomodations-popular-title {
     display: flex;
+    justify-content: space-between;
+    margin-right: 20%;
+}
+
+#accomodations-popular-title i {
+    position: relative;
+    top: 20px;
+}
+
+#accomodations-popular-content .accomodation-card {
+    width: 330px;
+    height: 140px;
+    padding: 1% 1%;
+}
+
+
+#accomodations-popular-content div {
+    padding: 15px 15px;
+}
+
+#accomodations-popular-content .accomodation-card img {
+    border-radius: 0.5em 0px 0px 0.5em;
+    max-width: 130px;
+    height: 140px;
+    margin: 0.1% 0 0% 0;
+    object-fit: cover;
+}
+
+#accomodations-popular-content .accomodation-card a {
+    display: flex;
+}
+
+
+#accomodations-popular-content p {
+    margin: 5% 0 25% 0;
 }
 
 /* rating stars color */
