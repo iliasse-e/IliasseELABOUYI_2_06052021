@@ -315,12 +315,17 @@ main {
     display: flex;
     flex-direction:column;
     justify-content: space-around;
+    margin: 1% 0 1% 0;
 }
 
 #activities h1 {
     vertical-align: bottom;
     margin-left: 2.2%;
     margin-bottom: -0%;
+}
+
+#activities h3 {
+    margin: 3% 0% 0 5%;
 }
 
 .activities-content-article {
@@ -330,7 +335,7 @@ main {
     border-radius: 0.8em;
     font-size: 1em;
     text-decoration: none;
-    box-shadow: 2px 2px 6px #9999;
+    box-shadow: 2px 2px 6px #e6e6e6;
     margin: 2% 2% 2% 2%;
     object-fit: cover;
 }
@@ -338,18 +343,18 @@ main {
 .activities-content-stair-container article {
     background-color: white;
     width: 300px;
-    height: 200px;
+    height: 210px;
     border-radius: 0.8em;
     font-size: 1em;
     text-decoration: none;
-    box-shadow: 2px 2px 6px #9999;
+    box-shadow: 2px 2px 6px #e6e6e6;
     margin: 2% 2% 2% 2%;
     object-fit: cover;
 }
 
 .activities-content-stair-container article img {
     width: 300px;
-    height: 170px;
+    height: 160px;
     border-top-right-radius: 0.8em;
     border-top-left-radius: 0.8em;
     object-fit: cover;
@@ -357,7 +362,7 @@ main {
 
 .activities-content-article img {
     width: 300px;
-    height: 400px;
+    height: 390px;
     border-top-right-radius: 0.8em;
     border-top-left-radius: 0.8em;
     object-fit: cover;
@@ -369,6 +374,7 @@ footer {
     display: flex;
     justify-content:left;
     background-color: #f2f2f2;
+    margin-top: 5%;
 }
 
 footer section {
