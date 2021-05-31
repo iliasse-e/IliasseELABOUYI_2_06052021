@@ -7,6 +7,14 @@ body {
     font-size: 16px;
 }
 
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1em;
+}
+
 a {
     text-decoration: none;
     color:inherit;
@@ -243,9 +251,6 @@ main {
     border-top-left-radius: 0.5em;
 }
 
-#accomodations h2 {
-    font-size: 1em;
-}
 
 /* Popular - Aside */
 
@@ -257,7 +262,8 @@ main {
 
 #accomodations-popular-title i {
     position: relative;
-    top: 20px;
+    top: 27px;
+    font-size: 1.25em;
 }
 
 #accomodations-popular-content .accomodation-card {
@@ -301,39 +307,81 @@ main {
 /*-- Activities --*/
 
 #activities-content {
-    background-color: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#activities-content-article {
+.activities-content-stair-container {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+
+#activities h1 {
+    vertical-align: bottom;
+    margin-left: 2.2%;
+    margin-bottom: -0%;
+}
+
+.activities-content-article {
     background-color: white;
     width: 300px;
-    height: 440;
-    border-radius: 2.8em;
+    height: 440px;
+    border-radius: 0.8em;
     font-size: 1em;
     text-decoration: none;
-    box-shadow: 2px 2px 0px #9999;
+    box-shadow: 2px 2px 6px #9999;
+    margin: 2% 2% 2% 2%;
+    object-fit: cover;
 }
 
-#activities-content-article img {
+.activities-content-stair-container article {
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    border-radius: 0.8em;
+    font-size: 1em;
+    text-decoration: none;
+    box-shadow: 2px 2px 6px #9999;
+    margin: 2% 2% 2% 2%;
+    object-fit: cover;
+}
+
+.activities-content-stair-container article img {
+    width: 300px;
+    height: 170px;
+    border-top-right-radius: 0.8em;
+    border-top-left-radius: 0.8em;
+    object-fit: cover;
+}
+
+.activities-content-article img {
     width: 300px;
     height: 400px;
-    border-top-right-radius: 2.8em;
-    border-top-left-radius: 2.8em;
+    border-top-right-radius: 0.8em;
+    border-top-left-radius: 0.8em;
+    object-fit: cover;
 }
 
 /*-- Footer --*/
 
 footer {
     display: flex;
-    justify-content: space-around;
+    justify-content:left;
     background-color: #f2f2f2;
-    
 }
 
 footer section {
-    text-align: center;
+    text-align: left;
+    padding-right: 15%;
+}
+
+footer h2 {
+    padding-left: 40px;
 }
 
 footer li {
     list-style: none;
+    padding-bottom: 15px;
+    font-size: 0.9em;
 }
