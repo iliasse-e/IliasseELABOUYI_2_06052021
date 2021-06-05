@@ -1,0 +1,601 @@
+/* Body et paramètres généraux */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+#body-without-footer {
+    margin: 30px 40px 40px 40px;
+    width: calc(100% - 80px);
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+/*-- Header --*/
+
+#header-first-line {
+    display: flex;
+    justify-content: space-between;
+    color: #0065FC;
+    align-items: center;
+}
+
+#header-first-line a {
+    font-weight: 800;
+    margin: 0 4% 0 4%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-top: -30px;
+    margin-left: 700px;
+}
+
+header div a {
+    margin-right: 70px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header nav div :nth-child(1)  {
+    border-top: 2px solid #0065FC;
+    padding-block-start: 39px;
+    color: #0065FC;
+}
+
+header nav a:active {
+    border-top: 2px solid #0065FC;
+    padding-block-start: 39px;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin-top: 3%;
+}
+
+#header-search p {
+    margin-bottom: 50px;
+    font-size: 0.9em;
+}
+
+/*-- Search input --*/
+
+#header-search p {
+    font-weight: 500;
+}
+
+#header-search-input {
+    height: 40px;
+    min-width: 342px;
+    width: 30%;
+}
+
+#header-search input {
+    width: 40%;
+    font-weight: 700;
+    font-size: 1em;
+    margin-left: 10px;
+    height: 100%;
+    border-width:0;
+}
+
+#header-search span i {
+    background: #f2f2f2;
+    padding: 20px;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
+
+header button {
+    background-color: #0a5ff4 ;
+    border: none;
+    height: 105%;
+    min-width: 8%;
+    border-top-right-radius: 0.7em;
+    border-bottom-right-radius: 0.7em;
+    padding: 0 20px 0 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+#accomodations-search-input-button-smartphone {
+    display: none;
+}
+
+/*-- Filters --*/
+
+#filters {
+    margin: 40px 0 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.filter-content:hover {
+    transform: scale(1.2);
+    transition: transform .9s ease;
+}
+
+#filters i {
+    color:#0a5ff4;
+    background-color: #ddeafd;
+    width: 2.2em;
+    height: 2.2em;
+    border-radius: 1.7em;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    font-size: 1.5em;
+}
+
+.filter-container {
+    vertical-align: middle;
+    padding: 10px 0 0 25px;
+}
+
+.filter-content {
+    font-weight:bold;
+    font-size: 0.9em;
+    display: flex;
+    border: 0.18em #d8d8d8 solid;
+    border-radius: 2.4em;
+    align-items: center;
+}
+
+#filters p {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 800;
+}
+
+#result-information {
+    display: flex;
+}
+
+#result-information p {
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+#result-information span {
+    display: inline-block;
+    width: 25px;
+    height: 24px;
+    border: 0.08em #d8d8d8 solid;
+    border-radius: 2.4em;
+    text-align: center;
+    margin: 10px 10px 0 0;
+}
+
+#result-information span i {
+    font-size: 0.8em;
+    color:#0a5ff4;
+}
+
+
+/*-- Main --*/
+
+main {
+}
+
+/*-- Accomodation --*/
+
+#accomodations {
+    width: 100%;
+    display: flex;
+    margin: 10px 0 10px 0;
+}
+
+#accomodations section {
+    background-color: #f2f2f2;
+    width: 66%;
+    border-radius: 1em;
+    margin-right: 40px;
+    padding-left: 30px;
+}
+#accomodations aside {
+    background-color: #f2f2f2;
+    width: calc(34%-40px);
+    border-radius: 1em;
+    padding-left: 30px;
+}
+
+#accomodations-content {
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+.accomodation-card:hover {
+    transform: scale(1.02);
+    transition: transform .4s ease;
+}
+
+.accomodation-card {
+    size: 10%;
+    background-color: white;
+    width: 22%;
+    min-width: 200px;
+    height: 200px;
+    border-radius: 1em;
+    font-size: 0.8em;
+    text-decoration: none;
+    box-shadow: 1px 1px 6px #9999;
+    margin:0 3em 3em 0;
+    text-align: center;
+}
+
+.accomodation-card h3, .accomodation-card p, .accomodation-card img {
+    margin: 0 0 5px 0;
+}
+
+.accomodation-card-information {
+    padding-left: 15px;
+    text-align: left;
+}
+
+.accomodation-card img {
+    object-fit: cover;
+    margin-top: 5px;
+    width: 95%;
+    height: 120px;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+}
+
+/*-- Popular - Aside --*/
+
+#accomodations-popular-title {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+#accomodations-popular-title i {
+    position: relative;
+    top: 27px;
+    font-size: 1.25em;
+    padding-right: 40px;
+}
+
+#accomodations-popular-content .accomodation-card {
+    width: 85%;
+    min-width: 295px;
+    height: 140px;
+    padding: 5px 5px;
+}
+
+#accomodations-popular-content div {
+    padding: 15px 15px;
+}
+
+#accomodations-popular-content .accomodation-card img {
+    border-radius: 0.5em 0px 0px 0.5em;
+    max-width: 130px;
+    height: 140px;
+    margin: 0.1% 0 0% 0;
+    object-fit: cover;
+}
+
+#accomodations-popular-content .accomodation-card a {
+    display: flex;
+}
+
+#accomodations-popular-content p {
+    margin: 10px 0 40px 0;
+}
+
+/*-- rating stars color --*/
+
+.checked {
+    color:#0065FC;
+}
+
+.unchecked {
+    color: #cecece;
+}
+
+/*-- Activities --*/
+
+#activities {
+    margin-top: 60px;
+}
+
+#activities-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.activities-content-stair-container {
+    display: flex;
+    flex-direction:column;
+    width: calc(25% - 40px);
+    margin: 0 0 0 40px;
+}
+
+#activities h1 {
+    vertical-align: bottom;
+    margin-bottom: 24px;
+}
+
+#activities h3 {
+    margin: 3% 0% 0 5%;
+}
+
+#second-full-height-activity-container {
+    margin: 0 0 0 40px;
+}
+
+.activities-content-article {
+    background-color: white;
+    width: calc(25% - 40px);
+    height: 440px;
+    border-radius: 1.5em;
+    font-size: 1em;
+    text-decoration: none;
+    box-shadow: 2px 2px 6px #e6e6e6;
+    object-fit: cover;
+}
+
+.activities-content-article:nth-child(1) {
+    margin-bottom: 40px;
+}
+
+.activities-content-stair-container article {
+    background-color: white;
+    width: 100%;
+    height: 200px;
+    border-radius: 1.5em;
+    font-size: 1em;
+    text-decoration: none;
+    box-shadow: 2px 2px 6px #e6e6e6;
+    margin: 0 40px 0 0;
+    object-fit: cover;
+}
+
+.activities-content-stair-container article img {
+    width: 100%;
+    height: 140px;
+    border-top-right-radius: 1.58em;
+    border-top-left-radius: 1.5em;
+    object-fit: cover;
+}
+
+.activities-content-article img {
+    width: 100%;
+    height: 380px;
+    border-top-right-radius: 1.5em;
+    border-top-left-radius: 1.5em;
+    object-fit: cover;
+}
+
+/*-- Footer --*/
+
+footer {
+    display: flex;
+    justify-content:left;
+    background-color: #f2f2f2;
+    padding-top: 40px;
+}
+
+footer section {
+    text-align: left;
+    padding-right: 15%;
+}
+
+footer h2 {
+    padding-left: 40px;
+}
+
+footer li {
+    list-style: none;
+    padding-bottom: 15px;
+    font-size: 0.9em;
+}
+
+
+
+
+/******************* R E S P O N S I V E **********************/
+
+
+
+/***** Smartphone ******/
+
+
+@media all and (max-device-width: 480px)
+{
+    body {
+        width: 100%;
+        max-width: 480px;
+        margin: 0;
+        font-size: 1.1em;
+    }
+
+    #body-without-footer {
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+        /*margin: auto;*/
+    }
+
+    header {
+        margin: 20px 30px;
+    }
+
+    #header-first-line {
+        margin-bottom: 160px;
+    }
+
+    #header-search {
+        margin-top: 100px;
+        display: block;
+    }
+
+    header nav {
+        display: block;
+        position: absolute;
+        top: 150px;
+        left: -700px;
+        width: 100%;
+    }
+
+    header nav a {
+        width: 50%;
+        padding: 0px 60px;
+        margin-right: 0;
+    }
+
+    header div {
+        display: flex;
+    }
+
+    header nav div :nth-child(1)  {
+        border-top: none;
+        padding-block-start: 0px;
+        border-bottom: 3px solid #0065FC;
+        padding-block-end: 20px;
+        box-sizing: content-box;
+    }
+
+    header nav div :nth-child(2)  {
+        border-top: none;
+        padding-block-start: 0px;
+        border-bottom: 3px solid #e6e6e6;
+        padding-block-end: 20px;
+        box-sizing: content-box;
+    }
+    
+    header nav a:active {
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        padding-block-end: 20px;
+    }
+
+    #header-search input {
+        width: 70%;
+    }
+
+    #location-button {
+        position: relative;
+        top: -10px;
+    }
+
+    #accomodations-search-input-button-smartphone {
+        display: block;
+        border-radius: 0.7em;
+    }
+    #accomodations-search-input-button {
+        display: none;
+    }
+
+    /*-- Filter --*/
+
+    #filters {
+        width: 100%;
+    }
+
+    #filters h3 {
+        padding: 0 100% 0 0;
+        margin-bottom: 5px;
+    }
+
+    .filter-container {
+        vertical-align: middle;
+        padding: 10px 20px 0 0px;
+    }
+
+
+    /* Main */
+
+    main {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Accomodations */
+
+    #accomodations {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    #accomodations section, #accomodations aside {
+        width: 100%;
+        margin: 0;
+    }
+
+    #accomodations section {
+        background-color:white;
+        order: 2;
+    }
+
+    #accomodations aside {
+        order:1;
+    }
+
+    .accomodation-card {
+        width: 100%;
+    }
+
+    /* Activities */
+
+    #activities {
+        width: 88%;
+        padding-left: 30px;
+    }
+
+    #activities-content {
+        display: block;
+    }
+
+    #activities article {
+        background-color: white;
+        width: 100%;
+        height: 200px;
+        border-radius: 1.5em;
+        font-size: 1em;
+        text-decoration: none;
+        box-shadow: 2px 2px 6px #e6e6e6;
+        margin: 0 40px 30px 0;
+        object-fit: cover;
+    }
+
+    #activities img {
+        height: 140px;
+    }
+
+    .activities-content-stair-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 0 0 0px;
+    }
+
+    /* Footer */
+
+    footer {
+        display: block;
+    }
+
+    footer section {
+        text-align: left;
+        padding-bottom: 10px;
+    }
+}
