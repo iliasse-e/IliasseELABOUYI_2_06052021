@@ -34,7 +34,7 @@ a {
 
 #header-first-line a {
     font-weight: 800;
-    margin: 0 4% 0 4%;
+    margin: 0 20px 0 20px;
 }
 
 header nav {
@@ -64,7 +64,7 @@ header nav a:active {
 
 header h1 {
     font-size: 1.5em;
-    margin-top: 3%;
+    margin-top: 50px;
 }
 
 #header-search p {
@@ -190,9 +190,6 @@ header button {
 
 /*-- Main --*/
 
-main {
-
-}
 
 /*-- Accomodation --*/
 
@@ -227,7 +224,6 @@ main {
 }
 
 .accomodation-card {
-    size: 10%;
     background-color: white;
     width: 22%;
     min-width: 300px;
@@ -236,7 +232,7 @@ main {
     font-size: 0.8em;
     text-decoration: none;
     box-shadow: 1px 1px 6px #9999;
-    margin:0 3em 3em 0;
+    margin:0 30px 30px 0;
     text-align: center;
 }
 
@@ -274,7 +270,7 @@ main {
 }
 
 #accomodations-popular-content .accomodation-card {
-    width: 85%;
+    width: 90%;
     min-width: 300px;
     height: 140px;
     padding: 5px 5px;
@@ -288,7 +284,7 @@ main {
     border-radius: 0.5em 0px 0px 0.5em;
     max-width: 130px;
     height: 140px;
-    margin: 0.1% 0 0% 0;
+    margin: 0px 0 0 0;
     object-fit: cover;
 }
 
@@ -335,7 +331,7 @@ main {
 }
 
 #activities h3 {
-    margin: 3% 0% 0 5%;
+    margin: 15px 0% 0 20px;
 }
 
 #second-full-height-activity-container {
@@ -396,7 +392,10 @@ footer {
 
 footer section {
     text-align: left;
-    padding-right: 15%;
+}
+
+#about, #our-accomodations {
+    padding-right: 400px;
 }
 
 footer h2 {
@@ -425,7 +424,7 @@ footer li {
         width: 100%;
         max-width: 480px;
         margin: 0;
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
 
     #body-without-footer {
@@ -520,7 +519,7 @@ footer li {
     }
 
     #filters h3 {
-        padding: 0 100% 0 0;
+        padding: 0 20px 0 0;
         margin-bottom: 5px;
     }
 
@@ -548,26 +547,31 @@ footer li {
         flex-direction: column;
     }
 
-    #accomodations section, #accomodations aside {
-        width: 100%;
+    #accomodations section {
+        background-color:white;
+        order: 2;
+        width:unset;
+        margin: 0;
+        padding: 0 0 0 24px;
+    }
+    
+    #accomodations aside {
+        order:1;
+        border-radius: 0em;
+        width: calc(100%-24px);
         margin: 0;
         padding: 0 0 0 24px;
     }
 
-    #accomodations section {
-        background-color:white;
-        order: 2;
-    }
-
-    #accomodations aside {
-        order:1;
-        border-radius: 0em;
-    }
-
     .accomodation-card {
-        width: 88%;
+        width: 94%;
         min-width: none;
         margin: 0px 0 24px 0;
+        padding: 0 0 10px 0;
+    }
+
+    .accomodation-card img {
+        width: 97%;
     }
 
     /* Activities */
@@ -614,6 +618,10 @@ footer li {
         text-align: left;
         padding-bottom: 10px;
     }
+
+    #about, #our-accomodations {
+        padding: 0 0 10px 0;
+    }
 }
 
 
@@ -621,7 +629,7 @@ footer li {
 
 
 @media (min-width: 480px) and (max-width: 768px) {
-    
+  
       body {
         width: 100%;
         max-width: 768px;
@@ -721,7 +729,7 @@ footer li {
     }
 
     #filters h3 {
-        padding: 0 100% 0 0;
+        padding: 0 20px 0 0;
         margin-bottom: 5px;
     }
 
@@ -748,6 +756,8 @@ footer li {
     #accomodations section {
         background-color:white;
         order: 2;
+        width: 95%;
+        padding: 0 0 0 24px;
     }
 
     #accomodations aside {
@@ -755,8 +765,60 @@ footer li {
         border-radius: 0em;
     }
 
+    #accomodations-content {
+        padding: inherit;
+    }
+
     /* Activities */
+    #activities {
+        width: 88%;
+        padding: 0 0 0 0px;
+        margin: 0 30px;
+        min-width: 25%;
+    }
+    #activities-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
+    #activities article {
+        background-color: white;
+        width: 30%;
+        height: 200px;
+        border-radius: 1.5em;
+        font-size: 1em;
+        text-decoration: none;
+        box-shadow: 2px 2px 6px #e6e6e6;
+        margin: 0 10px 30px 0;
+        object-fit: cover;
+    }
+
+    #activities img {
+        height: 140px;
+    }
+
+    .activities-content-stair-container {
+        display: flex;
+        flex-direction: row;
+        width: 66%;
+        margin: 0 0 0 0px;
+    }
+
+    .activities-content-stair-container article {
+        width: 100%;
+    }
     
+    /* Footer */
+    footer {
+        display: block;
+    }
 
+    footer section {
+        text-align: left;
+        padding-bottom: 10px;
+    }
+
+    #about, #our-accomodations {
+        padding: 0 0 10px 0;
+    }
   }
