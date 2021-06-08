@@ -27,22 +27,28 @@ a {
 
 #header-first-line {
     display: flex;
-    justify-content: space-between;
-    color: #0065FC;
     align-items: center;
+    width: 100%;
 }
 
-#header-first-line a {
+#logo {
+    width: calc(100% - 550px);
+    order:1;
+ }
+
+#subscription {
     font-weight: 800;
     margin: 0 20px 0 20px;
+    order:3;
+    width: 50px;
+    color: #0065FC;
 }
 
-header nav {
+nav {
     display: flex;
     justify-content: space-around;
-    position: relative;
-    margin-top: -30px;
-    left: 22%;
+    width: 500px;
+    order: 2;
 }
 
 header div a {
@@ -53,13 +59,13 @@ header div a {
 
 header nav div :nth-child(1)  {
     border-top: 2px solid #0065FC;
-    padding-block-start: 39px;
+    padding-block-start: 43px;
     color: #0065FC;
 }
 
 header nav a:active {
     border-top: 2px solid #0065FC;
-    padding-block-start: 39px;
+    padding-block-start: 43px;
 }
 
 header h1 {
@@ -208,7 +214,7 @@ header button {
 }
 #accomodations aside {
     background-color: #f2f2f2;
-    width: calc(34%-40px);
+    width: calc(34% - 40px);
     border-radius: 1em;
     padding-left: 30px;
 }
@@ -438,6 +444,10 @@ footer li {
 
     #header-first-line {
         margin-bottom: 160px;
+        justify-content: space-between;
+        width: calc(100% - 20px);
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     #header-search {
@@ -535,7 +545,7 @@ footer li {
     /* Main */
 
     main {
-        width: calc(100%-48px);
+        width: calc(100% - 48px);
         margin: 0;
         padding: 0 0 0 0;
         margin: 0 24px 0 24px;
