@@ -10,12 +10,8 @@ body {
     width: calc(100% - 80px);
 }
 
-h1 {
+h1, h2 {
     font-size: 1.5em;
-}
-
-h2 {
-    font-size: 1em;
 }
 
 a {
@@ -57,19 +53,16 @@ header div a {
     font-weight: 500;
 }
 
-header nav div :nth-child(1)  {
+header nav a:active, header nav div :nth-child(1) {
     border-top: 2px solid #0065FC;
     padding-block-start: 43px;
+}
+
+header nav div :nth-child(1)  {
     color: #0065FC;
 }
 
-header nav a:active {
-    border-top: 2px solid #0065FC;
-    padding-block-start: 43px;
-}
-
 header h1 {
-    font-size: 1.5em;
     margin-top: 50px;
 }
 
@@ -212,6 +205,7 @@ header button {
     margin-right: 40px;
     padding-left: 30px;
 }
+
 #accomodations aside {
     background-color: #f2f2f2;
     width: calc(34% - 40px);
@@ -229,6 +223,8 @@ header button {
     transform: scale(1.02);
     transition: transform .4s ease;
 }
+
+/* Cards */
 
 .accomodation-card {
     background-color: white;
@@ -332,7 +328,7 @@ header button {
     margin: 0 0 0 40px;
 }
 
-#activities h1 {
+#activities h3 {
     vertical-align: bottom;
     margin-bottom: 24px;
 }
@@ -405,7 +401,7 @@ footer section {
     padding-right: 400px;
 }
 
-footer h2 {
+footer h3 {
     padding-left: 40px;
 }
 
