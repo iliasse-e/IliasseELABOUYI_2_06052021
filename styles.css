@@ -134,7 +134,7 @@ header button {
     margin: 40px 0 40px 0;
     display: flex;
     flex-wrap: wrap;
-    width: 60%;
+    width: 70%;
 }
 
 #filters i {
@@ -404,7 +404,7 @@ footer section {
 }
 
 #about, #our-accomodations {
-    padding-right: 400px;
+    margin-right: 20%;
 }
 
 footer h3 {
@@ -795,6 +795,7 @@ footer {
 
 #about, #our-accomodations {
     padding-right: 0px;
+    margin-right: 10%;
 }
 
 footer h3, footer ul{
