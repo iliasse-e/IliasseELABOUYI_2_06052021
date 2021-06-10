@@ -428,7 +428,7 @@ footer li {
 /***** Smartphone ******/
 
 
-@media all and (max-device-width: 768px)
+@media all and (max-width: 768px)
 {
     body {
         width: 100%;
