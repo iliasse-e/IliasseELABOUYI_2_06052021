@@ -314,7 +314,6 @@ header button {
 }
 
 
-
 /*-- Activities --*/
 
 #activities {
@@ -428,7 +427,7 @@ footer li {
 /***** Smartphone ******/
 
 
-@media all and (max-width: 768px)
+@media all and (max-width: 480px)
 {
     body {
         width: 100%;
@@ -658,18 +657,236 @@ footer li {
 /******** Tablet ********/
 
 
-@media (min-width: 480px) and (max-width: 768px) {
-body {
-    font-size: 1em;
-    }  
-#accomodations-popular-content div {
-    font-size: 1em;
+@media (min-width: 480px) and (max-width: 769px){
+    body {
+        width: 100%;
+        margin: 0;
+        font-size: 1em;
+    }
+
+    #body-without-footer {
+        margin: 10px 0px 10px 0px;
+        width: unset;
+    }
+
+    header {
+        margin: 24px 24px;
+    }
+
+    #header-first-line {
+        margin-bottom: 160px;
+        justify-content: space-between;
+        width: calc(100% - 20px);
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    #header-search {
+        margin-top: 100px;
+        display: block;
+    }
+
+    header nav {
+        display: block;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top:100px;
+    }
+
+    header nav a {
+        width: 50%;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    header div {
+        display: flex;
+    }
+
+    header nav div :nth-child(1), header nav a:active  {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 20px;
+        box-sizing: content-box;
+    }
+
+    header nav div :nth-child(2)  {
+        border-top: none;
+        border-bottom: 3px solid #e6e6e6;
+        padding-bottom: 20px;
+        box-sizing: content-box;
+        padding-top: 43px;
+    }
+
+    #header-search input {
+        width: 70%;
+    }
+
+    #header-search-input {
+        height: 40px;
+        min-width: 200px;
+        max-width: 400px;
+        width: 100%;
+    }
+
+    #location-button {
+        position: relative;
+        top: -10px;
+    }
+
+    #accomodations-search-input-button-smartphone {
+        display: block;
+        border-radius: 0.7em;
+        position: relative;
+        top: -4px;
+        height: 50px;
+    }
+    #accomodations-search-input-button {
+        display: none;
+    }
+
+    /*-- Filter --*/
+
+    #filters {
+        width: 100%;
+    }
+
+    #filters h3 {
+        padding: 0 20px 0 0;
+        margin-bottom: 5px;
+    }
+
+    .filter-container {
+        vertical-align: middle;
+        padding: 10px 20px 0 0px;
+    }
+
+    #result-information span {
+        min-width: 25px;
+    }
+
+    /* Main */
+
+    main {
+        width: calc(100% - 48px);
+        margin: 0;
+        padding: 0 0 0 0;
+        margin: 0 24px 0 24px;
+    }
+
+    /* Accomodations */
+
+    #accomodations {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0 0 0 0;
+        flex-direction: column;
+    }
+
+    #accomodations section {
+        background-color:white;
+        order: 2;
+        width:unset;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #accomodations aside {
+        order:1;
+        border-radius: 0em;
+        width: 100%;
+        margin: 0 -24px 0 -24px;
+        padding: 0 24px 0 24px;
+    }
+
+    .accomodation-card {
+        width: 100%;
+        min-width: unset;
+        margin: 0px 0 24px 0;
+        padding: 0 0 10px 0;
+    }
+
+    #accomodations-popular-content .accomodation-card {
+        width: 97%;
+        min-width: 260px;
+    }
+
+    #accomodations .accomodation-card {
+        min-width: 220px;
+    }
+
+    #accomodations-popular-content div {
+        font-size: 1em;
+        padding: 10px 10px;
+    }
+
+    #accomodations-popular-content p {
+        margin: 10px 0 20px 0;
+    }
+
+    .accomodation-card img {
+        width: 97%;
+    }
+
+    /* Activities */
+
+    #activities {
+        padding: 0;
+    }
+
+    #activities-content {
+        display: block;
+    }
+
+    #activities article {
+        background-color: white;
+        width: 100%;
+        height: 190px;
+        border-radius: 1.5em;
+        font-size: 1em;
+        text-decoration: none;
+        box-shadow: 2px 2px 6px #e6e6e6;
+        margin: 0 0 30px 0;
+        object-fit: cover;
+    }
+
+    #activities img {
+        height: 140px;
+    }
+
+    .activities-content-stair-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 0 0 0px;
+    }
+
+    #activities h3 {
+        font-size: 1em;
+    }
+
+    /* Footer */
+
+    footer {
+        display: block;
+    }
+
+    footer section {
+        text-align: left;
+        padding-bottom: 10px;
+    }
+
+    #about, #our-accomodations {
+        padding: 0 0 10px 0;
     }
 }
 
-/******** small screen ********/
 
-@media (min-width: 768px) and (max-width: 1124px) {
+/******** small screen 769-1024 ********/
+
+@media (min-width: 769px) and (max-width: 1024px) {
 
     #logo {
         width: calc(97% - 350px);
@@ -691,117 +908,128 @@ body {
     #accomodations aside {
         width: 40%;
     }
-}
 
-
-    /* Accomodation card from 768px to 1124px */
-
-    @media (min-width: 768px) and (max-width: 914px) {
-
-        .accomodation-card {
-            min-width: 290px;
-        }
+    .accomodation-card {
+        min-width: 190px;
     }
 
-    @media (min-width: 914px) and (max-width: 1124px) {
-
-        .accomodation-card {
-            min-width: 190px;
-        }
+    #activities {
+        padding: 0;
+    }
+    
+    #activities-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #first-full-height-activity-container, #second-full-height-activity-container {
+        background-color: white;
+        width: calc(35% - 60px);
+        height: 200px;
+        border-radius: 1.5em;
+        font-size: 1em;
+        text-decoration: none;
+        box-shadow: 2px 2px 6px #e6e6e6;
+        margin-bottom: 30px;
+        object-fit: cover;
+    }
+    
+    #card-1, #card-2, #card-3, #card-4 {
+        margin: 0px 0 0 30px;
+    }
+    
+    #second-full-height-activity-container {
+        margin: 0;
+    }
+    
+    #activities img {
+        height: 140px;
+    }
+    
+    .activities-content-stair-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: unset;
+        width: 67%;
+        margin: 0 0 0 0px;
+    }
+    
+    #activities h3 {
+        font-size: 1em;
     }
 
 
-/* Activities from 768px to 1124px */
+    #accomodations-popular-content .accomodation-card {
+        min-width: 250px;
+    }
 
-@media (min-width: 768px) and (max-width: 1124px) {
+    #accomodations-popular-content div {
+        padding: 10px 15px;
+    }
 
-#activities {
-    padding: 0;
-}
+    #accomodations-popular-content p {
+        margin: 10px 0 10px 0;
+    }
 
-#activities-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#first-full-height-activity-container, #second-full-height-activity-container {
-    background-color: white;
-    width: calc(35% - 60px);
-    height: 200px;
-    border-radius: 1.5em;
-    font-size: 1em;
-    text-decoration: none;
-    box-shadow: 2px 2px 6px #e6e6e6;
-    margin-bottom: 30px;
-    object-fit: cover;
-}
-
-#card-1, #card-2, #card-3, #card-4 {
-    margin: 0px 0 0 30px;
-}
-
-#second-full-height-activity-container {
-    margin: 0;
-}
-
-#activities img {
-    height: 140px;
-}
-
-.activities-content-stair-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: unset;
-    width: 67%;
-    margin: 0 0 0 0px;
-}
-
-#activities h3 {
-    font-size: 1em;
-}
+    footer {
+        justify-content:space-between;
+        padding: 40px 40px;
+    }
+    
+    #about, #our-accomodations {
+        padding-right: 0px;
+        margin-right: 10%;
+    }
+    
+    footer h3, footer ul{
+        padding: 0;
+    }
 
 }
 
 
+/* Small screen 1025-1366 */
 
-/* Popular accomodation card and section from 768px to 1368px */
+@media (min-width: 1025px) and (max-width: 1366px) {
+    
+    .accomodation-card {
+        min-width: 190px;
+    }
 
-@media (min-width: 768px) and (max-width: 1368px) {
+    #accomodations-popular-content .accomodation-card {
+        min-width: 250px;
+    }
+    
+    #accomodations-popular-content div {
+        padding: 10px 15px;
+    }
+    
+    #accomodations-popular-content p {
+        margin: 10px 0 10px 0;
+    }
 
-#accomodations-popular-content .accomodation-card {
-    min-width: 250px;
-}
-
-#accomodations-popular-content div {
-    padding: 10px 15px;
-}
-
-#accomodations-popular-content p {
-    margin: 10px 0 10px 0;
-}
-
-}
-
-
-/* Footer 764px to 1368px */
-
-@media (min-width: 768px) and (max-width: 1368px) {
-
-footer {
-    justify-content:space-between;
-    padding: 40px 40px;
-}
-
-#about, #our-accomodations {
-    padding-right: 0px;
-    margin-right: 10%;
-}
-
-footer h3, footer ul{
-    padding: 0;
-}
+    footer {
+        justify-content:space-between;
+        padding: 40px 40px;
+    }
+    
+    #about, #our-accomodations {
+        padding-right: 0px;
+        margin-right: 10%;
+    }
+    
+    footer h3, footer ul{
+        padding: 0;
+    }
 }
 
 
+/* Specific MQ : Accomodation card from 768px to 1124px */
 
+@media (min-width: 769px) and (max-width: 914px) {
+
+    .accomodation-card {
+        min-width: 290px;
+    }
+}
