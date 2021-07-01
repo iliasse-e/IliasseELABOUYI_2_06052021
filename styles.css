@@ -36,25 +36,26 @@ a {
     width: 100%;
 }
 
-#logo {
-    width: calc(97% - 550px);
-    order:1;
- }
+    #logo {
+        width: calc(100% - 550px);
+        order:1;
+    }
 
-#subscription {
-    font-weight: 800;
-    margin: 0 20px 0 20px;
-    order:3;
-    width: 50px;
-    color: #0065FC;
-}
+    nav {
+        display: flex;
+        justify-content: space-around;
+        width: 500px;
+        order: 2;
+    }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    width: 500px;
-    order: 2;
-}
+    #subscription {
+        font-weight: 800;
+        margin: 0 20px 0 20px;
+        order:3;
+        width: 50px;
+        color: #0065FC;
+    }
+
 
 header div a {
     text-decoration: none;
@@ -158,9 +159,13 @@ header button {
 .filter-content {
     font-weight:bold;
     display: flex;
-    border: 0.18em #d8d8d8 solid;
+    border: 0.15em #d8d8d8 solid;
     border-radius: 2.4em;
     align-items: center;
+}
+
+.filter-content a {
+    padding: 0;
 }
 
 #filters p {
@@ -234,7 +239,7 @@ header button {
     background-color: white;
     width: 27%;
     height: 200px;
-    border-radius: 1em;
+    border-radius: 1.5em;
     font-size: 0.8em;
     text-decoration: none;
     box-shadow: 1px 1px 6px #9999;
@@ -256,8 +261,8 @@ header button {
     margin-top: 5px;
     width: 95%;
     height: 120px;
-    border-top-right-radius: 0.5em;
-    border-top-left-radius: 0.5em;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
 }
 
 /*-- Popular - Aside --*/
@@ -287,7 +292,7 @@ header button {
 }
 
 #accomodations-popular-content .accomodation-card img {
-    border-radius: 0.5em 0px 0px 0.5em;
+    border-radius: 1em 0px 0px 1em;
     max-width: 130px;
     height: 140px;
     margin: 0px 0 0 0;
@@ -1025,7 +1030,7 @@ footer li {
 }
 
 
-/* Specific MQ : Accomodation card from 768px to 1124px */
+/* Specific MQ : Accomodation card from 768px to 914px */
 
 @media (min-width: 769px) and (max-width: 914px) {
 

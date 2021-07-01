@@ -2,36 +2,58 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        
+        <!--CSS file-->
         <link rel="stylesheet" href="styles.css" />
+        
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+        <!--Font import-->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+       
+       <!--Icons import-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://kit.fontawesome.com/1d4b85ca7e.js" crossorigin="anonymous"></script>
         
+        <!--Tab logo-->
         <link rel="icon" type="image/png" href="images/logo/Reservia.svg">
+
+        <!--Tab title-->
         <title>Reservia</title>
     </head>
 
     <body>
+
+        <!--Container de séparation footer-->
         <div id="body-without-footer">
  
             <!-- Header -->
             <header>
+
+                <!--Container logo - Navbar - Btn s'inscrire-->
                 <div id="header-first-line">
+
+                    <!--Logo-->
                     <div id="logo">
-                        <img id="header-logo" src="images/logo/Reservia.svg" alt="logo">
+                        <a href="#">
+                            <img id="header-logo" src="images/logo/Reservia.svg" alt="logo">
+                        </a>
                     </div>
+
+                    <!--Navigation-->
                     <nav>
                         <div>
                             <a href="#accomodations">Hébergements</a>
                             <a href="#activities">Activités</a>
                         </div>
-                    </nav>    
+                    </nav>
+                    
+                    <!--Btn s'inscrire-->
                     <a id="subscription" href="#">S'inscrire</a>
                 </div>
                 
+                <!--Container recherche-->
                 <div id="header-search">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
@@ -39,38 +61,40 @@
                         <span id="location-button"> <i class="fas fa-map-marker-alt"></i></span>
                         <input type="text" id="accomodations-search-input-content" name="name" required
                         minlength="4" maxlength="8" size="10" value="Marseille, France">
-                        <button id="accomodations-search-input-button">Rechercher</button>
+                        
+                        <button href="#" id="accomodations-search-input-button">Rechercher</button>
                         <button id="accomodations-search-input-button-smartphone">
+                        
                             <i class="fas fa-search"></i>
                         </button>
                     </div>
                 </div>
             
-            
+                <!--Filtres-->
                 <div id="filters">
                     <h3>Filtres</h3>
                     
                     <div class="filter-container">                    
                         <div class="filter-content">
-                            <span><i class="fas fa-money-bill-wave-alt"></i></span><p>Économique</p>
+                            <span><i class="fas fa-money-bill-wave-alt"></i></span><a href="#"><p>Économique</p></a>
                         </div>
                     </div>
 
                     <div class="filter-container">                    
                         <div class="filter-content">
-                            <span><i class="fas fa-child"></i></span><p>Familial</p>
+                            <span><i class="fas fa-child"></i></span><a href="#"><p>Familial</p></a>
                         </div>
                     </div>
 
                     <div class="filter-container">                    
                         <div class="filter-content">
-                            <span><i class="fas fa-heart"></i></span><p>Romantique</p>
+                            <span><i class="fas fa-heart"></i></span><a href="#"><p>Romantique</p></a>
                         </div>
                     </div>
 
                     <div class="filter-container">                    
                         <div class="filter-content">
-                            <span><i class="fas fa-dog"></i></span><p>Animaux autorisés</p>
+                            <span><i class="fas fa-dog"></i></span><a href="#"><p>Animaux autorisés</p></a>
                         </div>
                     </div>
                     
@@ -84,7 +108,11 @@
             </header>
 
             <main>
+
+                <!--Section Hébergement-->
                 <div id="accomodations">
+
+                    <!--petite section Hébergements-->
                     <section id="accomodations-container">
                         <h2>Hébergements à Marseille</h2>
                         <div id="accomodations-content">
@@ -185,6 +213,8 @@
                             <a href="#">Afficher plus</a>
                         </h3>
                     </section>
+
+                    <!--petite section Populaire-->
                     <aside id="accomodations-popular">
                         <div id="accomodations-popular-title">
                             <h2>Les plus populaires</h2>
@@ -241,12 +271,12 @@
                     </aside>
                 </div>
                 
-                <!-- Activitées --> 
-
+                <!-- Section Activitées --> 
                 <section id="activities">
                     <h2>Activités à Marseille</h2>
                     <div id="activities-content">
 
+                        <!--Carte d'activité-->
                         <article class="activities-content-article" id="first-full-height-activity-container">
                             <a href="#">
                                 <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo activitées">
@@ -340,7 +370,6 @@
                 </ul>
             </section>
         </footer>
-
     </body>
 </html>
  
